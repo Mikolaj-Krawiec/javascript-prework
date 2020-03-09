@@ -1,0 +1,85 @@
+body{
+    background-image: linear-gradient(to right, rgb(255, 0, 242),rgb(251, 255, 0));
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container{
+        text-align: center;
+        .hands{
+            display: flex;
+            justify-content: space-between;
+            div{
+
+                margin: 0 50px;
+                
+                i{
+                    text-align: center;
+
+                    border-radius: 50%;
+                    color: #000;
+                    border: 10px solid #000;
+                    font-size: 100px;
+                    height: 150px;
+                    line-height: 150px;
+                    width: 150px;
+
+                }
+
+                &:nth-child(1){
+                    transform: rotate(90deg);
+                }
+    
+                &:nth-child(2){
+                    transform: rotate(-90deg) scaleX(-1);
+            }  
+
+            }
+            
+            .dummy{
+                display: block;
+                border: 10px solid #000;
+                border-radius: 50%;
+                font-size: 60px;
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        #buttons{
+            display: flex;
+
+            a{
+                margin: 30px;
+                line-height: 50px;
+                height: 50px;
+                width: 200px;
+                border: 5px solid #000;
+                text-decoration: none;
+                color: #000;
+                font-family:  Helvetica, sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .messages{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 30px;
+            font-family:  Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 25px;
+            &>div{
+                width: 200px;
+                margin: 0 30px;
+                text-align: center;
+            }
+        }
+    }
+}
