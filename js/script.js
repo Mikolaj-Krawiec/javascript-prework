@@ -1,5 +1,5 @@
 {
-    function printHand(msg){
+    const printHand = function(msg) {
         let div = document.createElement('div');
         if(msg === 'kamień') {
             div.innerHTML = '<i class="far fa-hand-rock"></i>';
@@ -13,7 +13,7 @@
         document.getElementById('hands').appendChild(div);
     }
 
-    function clearHands(){
+    const clearHands = function() {
         document.getElementById('hands').innerHTML = '';
     }
 
